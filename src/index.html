@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketcher</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin-top : 45.19px;
+            z-index: 1;
+            width: 100%;
+            position: relative;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+            padding: 10px;
+            z-index: 1;
+            position: relative;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+        li:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas class="webgl"></canvas>
+    <script type="module" src="./script.js"></script>
+    <div class="control-panel">
+        <div class="Object-List">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th><h3>List of Created Objects</h3></th>
+                        
+                    </tr>
+                </thead>
+            </table>
+            <ul id="elementList">
+        
+                <!-- List items will be added dynamically here -->
+            </ul>
+        </div>
+    
+    <div class="toolbar">
+        <table>
+            <tr>
+                <td><button id="LineButton">Line</button></td>
+                <td><button id="CircleButton">Circle</button></td>
+                <td><button id="EllipseButton">Ellipse</button></td>
+                <td><button id="PolyLineButton">PolyLine</button></td>
+            </tr>
+        </table>
+        
+    </div>
+    <div>
+    <!-- <h3>List of Created Objects</h3> -->
+    
+    <div id="propertiesBox" style="position: absolute; top: 0px; right: 0px;width: 273px; background-color: rgba(255, 255, 255, 0.8); border: 1px solid #ccc;">
+        <h2>Properties</h2>
+        <p id="selectedObjectName">Selected Object: None</p>
+        <p id="selectedObjectColor" >Color: None</p>
+    </div>
+    <div id="selectedObjectColor" style="position: absolute; top: 63px; right: 0px;width: 273px; background-color: rgba(255, 255, 255, 0.8); border: 1px solid #ccc;">
+        Color: <span id="colorIndicator" style="cursor: pointer; text-decoration: underline;"></span>
+        <input type="color" id="colorPicker" value="#ff0000">
+    </div>
+    <button id="deleteObject" style="position: absolute;  top: 92px;width: 277.5px;height: 25.19px; right: 0px;">Delete</button>
+    <label id="radiusLabel" style="position: absolute;color: antiquewhite;  top: 117.19px; right: 217.05px; padding: 0px;"></label>
+    <input type="number" id="radiusInput" step="0.1" style="width: 273.5px;height: 25.19px;position: absolute; visibility: hidden; top: 135.1px; right: 0px; padding: 0px;">
+    <label id="radiusLabel1" style="position: absolute;color: antiquewhite;  top: 164.29px;right: 217.05px; padding: 0px;"></label>
+    <input type="number" id="radiusInput1" step="0.1" style="position: absolute;width: 273.5px;height: 25.19px; visibility: hidden; top: 182.29px; right: 0px; padding: 0px;">
+    <button id="updateRadius" style="position: absolute; visibility: hidden;width: 277.5px; top: 111.48px; right: 0px; padding: 0px;">Update Radius</button>
+</div>
+</div>
+</body>
+</html>   

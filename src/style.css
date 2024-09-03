@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+button
+{
+    width: 100%;
+    height: 100%;
+    border: #000000;
+    color: #000000; 
+    background-color: #CCCCCC;
+    font-weight: 600;
+
+}
+html,
+body
+{
+    overflow: hidden;
+}
+table
+{
+    width: 100%;
+
+}
+.toolbar
+{
+    background-color: #CCCCCC;
+	overflow: hidden;
+    justify-content: center;
+	width: 1334px;
+    z-index: 1;
+    height: 10%;
+    float: left;
+	color: black;
+    border: #000000 2px solid;
+	text-align: center;
+	padding: 7.1px 16px;
+	text-decoration: none;
+	font-size: 20px;
+}
+.Object-List
+{
+    background-color: #CCCCCC;
+    overflow: hidden;
+    text-align: center;
+    width: 14.35%;
+    margin-left: 0;
+    margin-top: 0;
+    z-index: 1;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 6px;
+}
+.control-panel
+{
+    display: flex;
+}
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: 0;
+}
+
+#LineButton
+{
+    background-color: #FFFFFF;
+    border: #000000 1px solid;
+    
+}
+#PolyLineButton
+{
+    background-color: #FFFFFF;
+    border: #000000 1px solid;
+}
+#CircleButton
+{
+    background-color: #FFFFFF;
+    border: #000000 1px solid;
+}
+#EllipseButton
+{
+    background-color: #FFFFFF;
+    border: #000000 1px solid;
+}
+#deleteObject
+{
+    background-color: #FFFFFF;
+    border: #000000 1px solid;
+    width: 239.5px;
+    height: 45.19px;
+    margin-right: 0%;
+}
+#updateRadius
+{
+    background-color: #FFFFFF;
+    border: #000000 1px solid;
+    width: 267.5px;
+    top: 211.48px;
+    height: 45.19px;
+    margin-right: 0%;
+}
+#ElementList
+{
+    width: 14.35%;
+}
